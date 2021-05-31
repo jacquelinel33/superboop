@@ -1,0 +1,13 @@
+.products-container {
+  top: 50px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+
+  .product-image{
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  }
+}
+  
