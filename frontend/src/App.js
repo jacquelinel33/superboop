@@ -1,22 +1,23 @@
-import React from 'react'
-import data from './data'
-import Nav from './components/Nav/Nav'
-import Product from './components/Products/Products'
+import React from 'react';
+import Nav from './components/Nav/Nav';
+import Products from './components/Products/Products';
+import { BrowserRouter, Route } from 'react-router-dom';
+import ProductScreen from './components/Products/ProductScreen';
 
 const App = () => {
 
   return (
+  <BrowserRouter>
   <div className='site-container'>
     <header>
       <Nav/>
     </header>
     <main>
-      <div>
-        <Product data={data}/>
-      </div> 
+      <Route path='/' component={Products} exact></Route>
+      <Route path='/product/:id' component={ProductScreen}></Route>
     </main>
   </div>
-
+  </BrowserRouter>
   )
 }
 

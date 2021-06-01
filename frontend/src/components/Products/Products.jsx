@@ -1,7 +1,8 @@
 import React from 'react'
 import ProductList from './ProductList'
+import data from '../../data'
 
-const Product = ({data}) => {
+const Products = () => {
   return (
     <div className="products-container">
       {data.products.map((product) => {
@@ -11,4 +12,4 @@ const Product = ({data}) => {
   )
 }
 
-export default Product
+export default Products
