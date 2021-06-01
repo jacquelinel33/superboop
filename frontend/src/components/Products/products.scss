@@ -4,10 +4,17 @@
   display: flex;
   flex-direction: row;
 
-  .product-image{
+  .small-image {
   width: 15em;
   height: 15em;
   object-fit: cover;
   }
 }
-  
+
+
+
+.medium-image {
+  width: 30em;
+  height: 30em;
+  object-fit: cover;
+}
