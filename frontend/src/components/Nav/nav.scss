@@ -6,7 +6,6 @@ header{
   width: 100%;
   position: fixed;
   z-index: 2;
-  padding-top: 1vw;
   padding-bottom: 1vw;
   padding-left: 4vw;
   padding-right: 4vw;
@@ -17,10 +16,15 @@ header{
   color: rgb(243, 135, 180);
   overflow: hidden;
 
-  ._logo {
-    font-size: 4em;
-    
-   
+  ._left {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .logo {
+      width: 2em;
+      height: 2em;
+    }
   }
 
   ._right {
@@ -32,3 +36,5 @@ header{
   }
 
 }
+
+

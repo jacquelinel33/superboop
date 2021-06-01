@@ -9,6 +9,7 @@ const ProductScreen = (props) => {
   }
 
   return (
+    // <Link to '/'
     <div className="product-container">
       <div >
         <img className="medium-image" src={product.image} alt={product.name}></img>

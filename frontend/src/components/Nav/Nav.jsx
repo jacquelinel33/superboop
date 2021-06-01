@@ -1,10 +1,14 @@
-import React from 'react';
+
+
 
 
 const Nav = () => {
   return (
     <div className='nav'>
-      <div className='_logo'>Superboop</div>
+      <div className='_left'>
+        <h2>Superboop</h2>
+        <img className="logo" src="/images/dog-nose.jpeg" alt="logo"/>
+      </div>
       <div className='_right'>
         <div>login</div>
         <div>instagram</div>
