@@ -5,13 +5,19 @@ import ProductList from './ProductList';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      const { data } = await axios.get('/api/products');
-      setProducts(data)
-    };
+  const [error, setError] = useState(false);
 
-    fetchData();
+
+  useEffect(() => {
+    const fetchData = axios.get('/api/products');
+    fetchData 
+      .then(res => {
+        console.log('res', res)
+        setProducts(res.data)
+      })
+      .catch(err => {
+        setError(err.message);
+      })
   }, []);
 
   return (
