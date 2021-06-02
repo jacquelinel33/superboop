@@ -1,8 +1,8 @@
 import React from 'react';
 import Nav from './components/Nav/Nav';
 import Products from './components/Products/Products';
-import { BrowserRouter, Route } from 'react-router-dom';
-import ProductScreen from './components/Products/ProductScreen';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ProductPage from './components/Products/ProductPage';
 
 const App = () => {
 
@@ -13,8 +13,10 @@ const App = () => {
       <Nav/>
     </header>
     <main>
-      <Route path='/' component={Products} exact></Route>
-      <Route path='/product/:id' component={ProductScreen}></Route>
+      <Switch>
+        <Route exact path="/" component={Products}/>
+        <Route path="/product/:id" component={ProductPage}/>
+      </Switch>
     </main>
   </div>
   </BrowserRouter>
