@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import data from '../../data';
+import { detailsProduct } from '../../actions/productActions';
+
 
 const ProductPage = (props) => {
-  console.log("PROPS!", props);
-  const product = data.products.find( e => e._id === props.match.params.id);
-  if (!product) {
-    return <div> Product Not Found</div>;
-  }
+  const dispatch = useDispatch();
+  const productId = props.match.params.id;
+  const productDetails = useSelector( state => state.productDetails);
+  const { product } = productDetails;
+  
+  useEffect(() => {
+   dispatch(detailsProduct(productId));
+  }, [dispatch, productId]);
 
+  
   return (
     <>
     <Link to="/">Back</Link>

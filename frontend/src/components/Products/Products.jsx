@@ -13,7 +13,7 @@ const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(listProducts())
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="products-container">
