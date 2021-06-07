@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { detailsProduct } from '../../actions/productActions';
@@ -9,30 +9,49 @@ const ProductPage = (props) => {
   const productId = props.match.params.id;
   const productDetails = useSelector( state => state.productDetails);
   const { product } = productDetails;
+  const [qty, setQty] = useState(1);
   
   useEffect(() => {
    dispatch(detailsProduct(productId));
   }, [dispatch, productId]);
+
+  const addToCartHandler = () => {
+    props.history.push(`/cart/${productId}?qty={qty}`);
+  }
 
   
   return (
     <>
     <Link to="/">Back</Link>
     <div className="product-container">
-      <div >
+      <div>
         <img className="medium-image" src={product.image} alt={product.name}></img>
       </div>
       <section className="product-details">
         <div>{product.name}</div>
         <div>${product.price}</div>
         <div>{product.description}</div>
-        <div className="quantity-input">
-          <div>Quantity:</div>
-          <input size="4" max="9999" min="1" value="1" type="number" step="1"/>
-        </div>
-        <div>
-          <button className="add-to-cart">Add to Cart</button>
-        </div>
+        {
+          product.countInStock > 0 && (
+            <>
+            <div className="quantity-input">
+              <div>Quantity:</div>
+              <div>
+                <select value={qty} onChange={e => setQty(e.target.value)}/>
+                  {
+                    [...Aray(product.countInStock).keys().map( e => {
+                      <option key={x+1} value={x+1}>{x+1}</option>
+                    })]
+                  }
+                </select>
+              </div>
+            </div>
+            <div>
+              <button onClick={addToCartHandler} className="add-to-cart">Add to Cart</button>
+            </div>
+            </>
+          )
+        }
       </section>
     </div>
     </>
