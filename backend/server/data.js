@@ -8,6 +8,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Play tug with these cute cherries!',
+      stock: 20,
     },
     {
       _id: '2',
@@ -17,6 +18,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     },
     {
       _id: '3',
@@ -26,6 +28,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Yummy Gimbap',
+      stock: 20,
     },
     {
       _id: '4',
@@ -35,6 +38,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Lemonade',
+      stock: 20,
     },
     {
       _id: '5',
@@ -44,6 +48,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     },
     {
       _id: '6',
@@ -53,6 +58,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     },
     {
       _id: '7',
@@ -62,6 +68,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     },
     {
       _id: '8',
@@ -71,6 +78,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     },
     {
       _id: '9',
@@ -80,6 +88,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     },
     {
       _id: '10',
@@ -89,6 +98,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     },
     {
       _id: '11',
@@ -98,6 +108,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     },
     {
       _id: '12',
@@ -107,6 +118,7 @@ const data = {
       price: 20,
       brand: 'Bite Me',
       description: 'Cutest chocolate',
+      stock: 20,
     }
   ]
 }

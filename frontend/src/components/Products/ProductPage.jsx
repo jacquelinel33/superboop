@@ -32,17 +32,22 @@ const ProductPage = (props) => {
         <div>${product.price}</div>
         <div>{product.description}</div>
         {
-          product.countInStock > 0 && (
+          product.stock > 0 && (
             <>
             <div className="quantity-input">
               <div>Quantity:</div>
               <div>
-                <select value={qty} onChange={e => setQty(e.target.value)}/>
-                  {
-                    [...Array(product.countInStock).keys().map( e => {
-                      <option key={e+1} value={e+1}>{e+1}</option>
-                    })]
-                  }
+                <select 
+                  value={qty} 
+                  onChange={e => setQty(e.target.value)}
+                >
+                  {[...Array(product.stock).keys()].map( x => (
+                      <option key={x + 1} value={x + 1}>
+                        {x + 1}
+                      </option>
+                    )
+                  )}
+                </select>
               </div>
             </div>
             <div>
