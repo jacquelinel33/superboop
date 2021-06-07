@@ -39,11 +39,10 @@ const ProductPage = (props) => {
               <div>
                 <select value={qty} onChange={e => setQty(e.target.value)}/>
                   {
-                    [...Aray(product.countInStock).keys().map( e => {
-                      <option key={x+1} value={x+1}>{x+1}</option>
+                    [...Array(product.countInStock).keys().map( e => {
+                      <option key={e+1} value={e+1}>{e+1}</option>
                     })]
                   }
-                </select>
               </div>
             </div>
             <div>

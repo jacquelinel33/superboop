@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './components/Nav/Nav';
-import Products from './components/Products/Products';
+import Products from './components/Products/Products-Home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ProductPage from './components/Products/ProductPage';
 
