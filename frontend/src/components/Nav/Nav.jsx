@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 require('react-dom');
 window.React2 = require('react');
@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <div className='nav'>
       <div className='_left'>
-        <h2>Superboop</h2>
+        <NavLink to='/'>Superboop</NavLink>
         <img className="logo" src="/images/dog-nose.jpeg" alt="logo"/>
       </div>
       <div className='_right'>

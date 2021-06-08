@@ -22,10 +22,11 @@ const ProductPage = (props) => {
   
   return (
     <>
-    <Link to="/">Back</Link>
+    <Link to={"/"}>Back</Link>
     <div className="product-container">
       <div>
         <img className="medium-image" src={product.image} alt={product.name}></img>
+
       </div>
       <section className="product-details">
         <div>{product.name}</div>
