@@ -16,7 +16,7 @@ const ProductPage = (props) => {
   }, [dispatch, productId]);
 
   const addToCartHandler = () => {
-    props.history.push(`/cart/${productId}?qty={qty}`);
+    props.history.push(`/cart/${productId}?qty=${qty}`);
   }
 
   

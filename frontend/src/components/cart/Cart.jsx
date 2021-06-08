@@ -5,6 +5,8 @@ const Cart = (props) => {
   const qty = props.location.search
     ? Number(props.location.search.split('=')[1])
     :1;
+  console.log("match", props)
+  console.log("qty", props.location.search)
   return (
     <div>
       <h1>Cart Screen</h1>
