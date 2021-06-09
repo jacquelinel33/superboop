@@ -21,7 +21,16 @@ const Cart = (props) => {
     }
   }, [dispatch, productId, qty]);
 
+  const removeFromCartHandler = (id) => {
+    //add delete action
+  };
+
+  const checkoutHandler = () => {
+    props.history.push('/signing?redirect=shipping')
+  };
+
   return (
+    <>
     <div>
       <h1>Shopping Cart</h1>
       { cartItems.length === 0 ? <Message> Cart is empty </Message>
@@ -37,14 +46,44 @@ const Cart = (props) => {
               <div>
                 <Link to={`/product/${item.product}`}>{item.name}</Link>
               </div>
+              <div>
+                <select
+                value={item.qty}
+                onChange={e => 
+                  dispatch(
+                      addToCart(item.product, Number(e.target.value))
+                      )
+                    }
+                  >
+                    {[...Array(item.stock).keys()].map( x => (
+                      <option key={x + 1} value={x + 1}>
+                        {x + 1}
+                      </option>
+                    ))}
+                </select>
+              </div>
+              <div>
+                ${item.price}
+              </div>
+              <div>
+                <button type="button" onClick={ () => removeFromCartHandler(item.product)}>X</button>
+              </div>
             </div>
           ))}
         </div>
-      ) }
-      <p>
-        add to cart : ProductId: {productId} Qty: {qty}
-      </p>
+      )}
     </div>
+    <div>
+      <div>
+      Subtotal( {cartItems.reduce((a,c) => a + c.qty, 0)} items) : ${cartItems.reduce((a,c) => a + c.price * c.qty, 0)}
+      </div>
+      <div>
+        <button type="button" onClick={checkoutHandler} className="checkout-btn" disabled={cartItems.length === 0}>
+          Checkout
+        </button>
+      </div>
+    </div>
+    </>
   );
 };
 
