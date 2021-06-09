@@ -1,4 +1,3 @@
-import { createContext } from "react";
 import { CART_ADD_ITEM } from "../constants/cartConstants";
 
 export const cartReducer = (state = { cartItems:[] }, action) => {
@@ -9,13 +8,13 @@ export const cartReducer = (state = { cartItems:[] }, action) => {
       if(existItem) {
         return {
           ...state, 
-          cartItems: state.cartItems.map( x => x.product === existItem.product? item : x
+          cartItems: state.cartItems.map( x => x.product === existItem.product ? item : x
           ),
         }; 
       } else {
-        return {...state, cartIems: [...state.cartItems, item]}
+        return {...state, cartItems: [...state.cartItems, item]}
       }
     default:
       return state;
   }
-}
+};

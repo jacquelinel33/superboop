@@ -6,7 +6,7 @@ import { listProducts } from '../../actions/productActions';
 
 
 const Products = () => {
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
  const productList = useSelector( state => state.productList);
  const { products } = productList;
 
@@ -17,7 +17,7 @@ const dispatch = useDispatch();
 
   return (
     <div className="products-container">
-      {products.map((product) => {
+      { products.map((product) => {
         return <ProductList key={product._id} product={product}/>
       })};
     </div>
