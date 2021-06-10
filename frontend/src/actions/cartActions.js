@@ -15,4 +15,6 @@ export const addToCart = (productId, qty) => async(dispatch, getState) => {
       qty,
     }
   })
-}
+};
+
+export const deleteFromCart = (productId) => (dispatch, getState)

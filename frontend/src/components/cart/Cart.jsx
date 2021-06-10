@@ -33,7 +33,7 @@ const Cart = (props) => {
     <>
     <div>
       <h1>Shopping Cart</h1>
-      { cartItems.length === 0 ? <Message> Cart is empty </Message>
+      { cartItems.length === 0 ? (<Message> Cart is empty </Message>)
       :
       (
         <div>
