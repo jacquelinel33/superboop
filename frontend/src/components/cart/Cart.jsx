@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "../../actions/cartActions";
+import { addToCart, deleteFromCart } from "../../actions/cartActions";
 import Message from "../Messages/Message";
 
 const Cart = (props) => {
@@ -21,8 +21,8 @@ const Cart = (props) => {
     }
   }, [dispatch, productId, qty]);
 
-  const removeFromCartHandler = (id) => {
-    //add delete action
+  const deleteFromCartHandler = (id) => {
+    dispatch(deleteFromCart(id));
   };
 
   const checkoutHandler = () => {
@@ -66,7 +66,7 @@ const Cart = (props) => {
                 ${item.price}
               </div>
               <div>
-                <button type="button" onClick={ () => removeFromCartHandler(item.product)}>X</button>
+                <button type="button" onClick={ () => deleteFromCartHandler(item.product)}>X</button>
               </div>
             </div>
           ))}

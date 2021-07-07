@@ -13,7 +13,6 @@ const initalState = {
   }
 };
 
-
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
