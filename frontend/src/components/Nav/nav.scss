@@ -30,6 +30,10 @@ header{
   ._right {
     display: inline-flex;
     
+    a{
+      margin: .5em;
+    }
+    
     div{
       padding: 1em;
     }
