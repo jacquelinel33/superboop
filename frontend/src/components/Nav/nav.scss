@@ -7,17 +7,18 @@ header{
   position: fixed;
   z-index: 2;
   padding-bottom: 1vw;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgb(243, 135, 180);
   overflow: hidden;
+  text-decoration: none;
 
   ._left {
-    font-size: 2em;
+    font-size: 4em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,6 +30,7 @@ header{
 
   ._right {
     display: inline-flex;
+    font: 3em;
     
     a{
       margin: .5em;

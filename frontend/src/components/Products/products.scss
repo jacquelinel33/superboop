@@ -1,13 +1,16 @@
 .products-container {
-  top: 50px;
-  padding: 1em;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 
   .small-image {
   width: 15em;
   height: 15em;
   object-fit: cover;
+  }
+
+  .card {
+    margin: 2em;
   }
 }
 
