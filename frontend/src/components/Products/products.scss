@@ -1,15 +1,19 @@
 .products-container {
   display: grid;
-  align-content: center;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat(4, 2fr);
+
 
   .small-image {
-  width: 15em;
-  height: 15em;
-  object-fit: cover;
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card {
+    text-align: center;
     margin: 2em;
   }
 }
