@@ -9,7 +9,7 @@ const App = () => {
 
   return (
   <BrowserRouter>
-  <div className='site-container'>
+  <div className='site-container grid'>
     <header>
       <Nav/>
     </header>

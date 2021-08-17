@@ -1,9 +1,12 @@
 .products-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: 5%;
+  margin: 0 6em 0 6em;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+  justify-items: center;
   gap: 3em 3em;
   margin-top: 10em;
+  align-content: space-around;
 
 
   .card {
@@ -11,8 +14,8 @@
   }
 
   .small-image {
-    width: 20em;
-    height: 20em;
+    width: 25em;
+    height: 25em;
     object-fit: cover;
     display: block;
     margin-left: auto;
