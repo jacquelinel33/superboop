@@ -9,7 +9,7 @@ const Nav = () => {
     <div className='nav'>
       <div className='_left'>
         <NavLink to='/'>Superboop</NavLink>
-        <img className="logo" src="/images/dog-nose.jpeg" alt="logo"/>
+        {/* <img className="logo" src="/images/dog-nose.jpeg" alt="logo"/> */}
       </div>
       <div className='_right'>
         <a href="https://www.instagram.com/superboop.shop/">Instagram</a>

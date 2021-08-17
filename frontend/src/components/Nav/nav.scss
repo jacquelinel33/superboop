@@ -1,19 +1,27 @@
 header{
-  height: 8em;
+  height: 7em;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.928);
+  border-bottom: rgba(128, 128, 128, 0.229) thin;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+   -webkit-backdrop-filter: blur(4px);
+   -o-backdrop-filter: blur(4px);
+   -moz-backdrop-filter: blur(4px);
+
+   backdrop-filter: blur(4px);
 }
 
 .nav {
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-  padding-bottom: 1vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding: 1em 10em;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgb(243, 135, 180);
   overflow: hidden;
   text-decoration: none;
 
@@ -26,6 +34,9 @@ header{
       width: 2em;
       height: 2em;
     }
+  }
+  .logo {
+    opacity: .5;
   }
 
   ._right {
