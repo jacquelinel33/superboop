@@ -21,7 +21,9 @@ const App = () => {
         <Route path="/product/:id" component={ProductPage}/>
       </Switch>
     </main>
-    <Footer/>
+    <footer>
+      <Footer/>
+    </footer>
   </div>
   </BrowserRouter>
   )
