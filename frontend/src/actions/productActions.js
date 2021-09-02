@@ -3,14 +3,17 @@ import { PRODUCT_DETAILS_FAIL, PRODUCT_DETAILS_REQUEST, PRODUCT_DETAILS_SUCCESS,
 
 
 export const listProducts = () => async (dispatch) => {
+  //pending action
   dispatch({
     type: PRODUCT_LIST_REQUEST
   });
   try {
     const { data } = await axios.get('/api/products');
+    //fullfilled action
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   }
   catch(error) {
+    //rejected action
     dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message })
   }
 }
