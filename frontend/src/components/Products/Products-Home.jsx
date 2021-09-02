@@ -6,9 +6,9 @@ import { listProducts } from '../../actions/productActions';
 
 
 const Products = () => {
-  //useDipatch returns a reference to the dispatch function from redux store (no need to pass store.dispatch as a prop from App component)
+  //useDipatch returns a reference to the dispatch function from redux store (no need to pass store.dispatch as a prop from App component) dispatch method runs reducer function. 
   const dispatch = useDispatch();
-  
+
   //useSelector executes selector instructions and subscribes to re-rendering when selected state is changed. select only the state needed for this component.
  const productList = useSelector( state => state.productList);
  const { products } = productList;

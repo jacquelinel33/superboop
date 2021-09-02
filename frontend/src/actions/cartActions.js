@@ -2,6 +2,7 @@ import axios from "axios";
 
 import { CART_ADD_ITEM, CART_DELETE_ITEM } from "../constants/cartConstants";
 
+//await until product is fetched from api, then dispatches synchronous action
 export const addToCart = (productId, qty) => async(dispatch, getState) => {
   const {data} = await axios.get(`/api/products/${productId}`);
   dispatch({
