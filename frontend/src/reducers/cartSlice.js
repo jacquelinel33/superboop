@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+//createSlice automatically generates action creators and actions types that correspond to the reducers and state
+
 export const cartSlice = createSlice({
   name: 'cart',
   initialState: {},
@@ -24,3 +26,6 @@ export const cartSlice = createSlice({
     }
   }
 })
+
+export const { addItem, deleteItem } = cartSlice.actions;
+export default cartSlice.reducer;

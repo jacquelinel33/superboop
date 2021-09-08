@@ -1,7 +1,8 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunk from 'redux-thunk';
-import { cartReducer } from "./reducers/cartReducers";
+// import { cartReducer } from "./reducers/cartReducers";
 import { productDetailsReducer, productListReducer } from "./reducers/productReducers";
+import { cartSlice } from "./reducers/cartSlice";
 
 //store holds global state
 
@@ -17,7 +18,8 @@ const initalState = {
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
-  cart: cartReducer,
+  // cart: cartReducer,
+  cart: cartSlice.reducer
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

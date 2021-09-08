@@ -1,12 +1,12 @@
 import axios from "axios";
 
-import { CART_ADD_ITEM, CART_DELETE_ITEM } from "../constants/cartConstants";
+// import { CART_ADD_ITEM, CART_DELETE_ITEM } from "../constants/cartConstants";
 
 //await until product is fetched from api, then dispatches synchronous action
 export const addToCart = (productId, qty) => async(dispatch, getState) => {
   const {data} = await axios.get(`/api/products/${productId}`);
   dispatch({
-    type: CART_ADD_ITEM,
+    type: 'cart/addItem',
     payload: {
       name: data.name,
       image: data.image,
@@ -22,7 +22,7 @@ export const addToCart = (productId, qty) => async(dispatch, getState) => {
 
 export const deleteFromCart = (productId) => (dispatch, getState) => {
   dispatch({
-    type: CART_DELETE_ITEM,
+    type: 'cart/deleteItem',
     payload: productId });
     localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
   };
