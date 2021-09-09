@@ -14,11 +14,11 @@ const initalState = {
   }
 };
 
-//
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
   // cart: cartReducer,
+  //cart reducer uses createSlice() to create reducers
   cart: cartSlice.reducer
 })
 
