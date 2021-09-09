@@ -34,6 +34,7 @@
     "jss-plugin-rule-value-function": "^10.6.0",
     "jss-plugin-vendor-prefixer": "^10.6.0",
     "loose-envify": "^1.4.0",
+    "mongoose": "^6.0.5",
     "normalize-path": "^3.0.0",
     "object-assign": "^4.1.1",
     "picomatch": "^2.3.0",
