@@ -9,13 +9,13 @@ const data = {
       isAdmin: true,
     },
     {
-      name: 'Jacqueline',
-      email: 'hello@gmail.com',
+      name: 'Sunny',
+      email: 'hello2@gmail.com',
       password: bcrypt.hashAsync('1234', 8),
       isAdmin: false,
     }
   ],
-  
+
   products: [
     {
       _id: '1',
