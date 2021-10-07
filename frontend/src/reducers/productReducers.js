@@ -1,5 +1,6 @@
 import { PRODUCT_DETAILS_SUCCESS, PRODUCT_LIST_FAIL, PRODUCT_LIST_SUCCESS } from "../constants/productConstants"
 
+//reducer identifies how current state and action are used in combination to create new state
 export const productListReducer = (state = { products: [] }, action) => {
   switch(action.type) {
     case PRODUCT_LIST_SUCCESS: 
