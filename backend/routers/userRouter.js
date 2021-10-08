@@ -1,13 +1,14 @@
 import express from 'express';
-import User from '../models/userModel';
+import User from '../models/userModel.js';
 import data from '../server/data.js';
+import expressAsyncHandler from 'express-async-handler';
 
-//allow multiple files to have routers
+//allows routes in this file seperate from server/index.js
 const userRouter = express.Router();
 
-userRouter.get('/seed', async(req,res) => {
-  const createdUser = await User.insertMany(data.users );
-  res.send({ createdUsers });
-})
+userRouter.get('/seed', expressAsyncHandler( async(req, res) => {
+  const createdUser = await User.insertMany(data.users);
+  res.send({ createdUser });
+}));
 
 export default userRouter;

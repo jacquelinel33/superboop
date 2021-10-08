@@ -14,6 +14,8 @@
     "css-vendor": "^2.0.8",
     "csstype": "^2.6.17",
     "dom-helpers": "^5.2.1",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
     "fill-range": "^7.0.1",
     "fsevents": "^2.3.2",
     "glob-parent": "^5.1.2",

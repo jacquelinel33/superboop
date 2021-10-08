@@ -6,10 +6,10 @@ import userRouter from '../routers/userRouter.js';
 const app = express()
 const port = 8000
 
+//connect to db
 mongoose.connect('mongodb://localhost/superboop', {
-  useNewUrlParse: true,
+  useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true,
 })
 
 app.get('/api/products/:id', (req,res) => {
@@ -26,7 +26,11 @@ app.get('/api/products', (req,res) => {
   res.send(data.products);
 })
 
-app.get('/api/users', userRouter);
+app.use('/api/users', userRouter);
+app.use((err, req, res, next) => {
+  res.status(500).send({message: err.message});
+});
+
 app.get('/', (req,res) => {
   res.send('Server is ready');
 });
