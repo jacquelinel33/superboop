@@ -18,7 +18,6 @@ const data = {
 
   products: [
     {
-      _id: '1',
       name: 'Cherry Tug',
       category: 'Toy',
       image: '/images/cherry-tug.png',
@@ -28,7 +27,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '2',
       name: 'Chocolate Toy',
       category: 'Toy',
       image: '/images/chocolate.png',
@@ -38,7 +36,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '3',
       name: 'Gimbap Toy',
       category: 'Toy',
       image: '/images/gimbap.png',
@@ -48,7 +45,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '4',
       name: 'Lemonade',
       category: 'Toy',
       image: '/images/lemonade.png',
@@ -58,7 +54,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '5',
       name: 'Loaf',
       category: 'Toy',
       image: '/images/loaf.png',
@@ -68,7 +63,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '6',
       name: 'Meat',
       category: 'Toy',
       image: '/images/meat.png',
@@ -78,7 +72,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '7',
       name: 'Playbook',
       category: 'Toy',
       image: '/images/playbook.png',
@@ -88,7 +81,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '8',
       name: 'Pretzel',
       category: 'Toy',
       image: '/images/pretzel.png',
@@ -98,7 +90,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '9',
       name: 'Rollcake',
       category: 'Toy',
       image: '/images/rollcake.png',
@@ -108,7 +99,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '10',
       name: 'Toast',
       category: 'Toy',
       image: '/images/toast.png',
@@ -118,7 +108,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '11',
       name: 'Yoooboo Sushi',
       category: 'Toy',
       image: '/images/yooboo.png',
@@ -128,7 +117,6 @@ const data = {
       stock: 20,
     },
     {
-      _id: '12',
       name: 'Clam & Pearl',
       category: 'Toy',
       image: '/images/clam.png',
