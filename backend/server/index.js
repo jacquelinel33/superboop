@@ -4,17 +4,17 @@ import mongoose from 'mongoose';
 import userRouter from '../routers/userRouter.js';
 
 const app = express()
-const port = process.env.PORT || 3000;
+const port = 8000;
 
 //connect to db
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/superboop', {
+mongoose.connect('mongodb://localhost/superboop', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 
 app.get('/api/products/:id', (req,res) => {
   console.log("params", req)
-  const product = data.products.find( product => product._id = == req.params.id);
+  const product = data.products.find( product => product._id === req.params.id);
   if (product) { 
     res.send(product);
  } else {
