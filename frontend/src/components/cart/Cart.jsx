@@ -30,7 +30,7 @@ const Cart = (props) => {
   };
 
   return (
-    <>
+    <div className="cart">
     <div>
       <h1>Shopping Cart</h1>
       { cartItems.length === 0 ? (<Message> Cart is empty </Message>)
@@ -83,7 +83,7 @@ const Cart = (props) => {
         </button>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

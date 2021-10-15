@@ -10,10 +10,11 @@ const Products = () => {
   const dispatch = useDispatch();
 
   //useSelector executes selector instructions and subscribes to re-rendering when selected state is changed. select only the state needed for this component.
- const productList = useSelector( state => state.productList);
+ const productList = useSelector(state => state.productList);
  const { products } = productList;
 
-
+//hook that tells component to do something after render
+//dispatch action to the store
   useEffect(() => {
     dispatch(listProducts())
   }, [dispatch]);
