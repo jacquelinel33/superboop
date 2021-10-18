@@ -4,7 +4,7 @@ import userRouter from '../routers/userRouter.js';
 import productRouter from '../routers/productRouter.js';
 
 const app = express()
-const port = 8000
+const port = 8000;
 
 //connect to db
 mongoose.connect('mongodb://localhost/superboop', {
