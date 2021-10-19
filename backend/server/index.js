@@ -2,6 +2,9 @@ import express from 'express';
 import mongoose from 'mongoose';
 import userRouter from '../routers/userRouter.js';
 import productRouter from '../routers/productRouter.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express()
 const port = 8000;
