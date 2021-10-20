@@ -13,7 +13,7 @@ const Nav = () => {
       </div>
       <div className='_right'>
         <a href="https://www.instagram.com/superboop.shop/">Instagram</a>
-        <NavLink to="/login">Login</NavLink>
+        <NavLink to="/signin">Sign in</NavLink>
         <NavLink to="/cart">Cart</NavLink>
       </div>
     </div>

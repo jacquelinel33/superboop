@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ProductPage from './components/Products/ProductPage';
 import Cart from './components/cart/Cart';
 import { Footer } from './components/Footer/Footer';
+import SignIn from './components/SignIn/SignIn';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
       <Switch>
         <Route path="/cart/:id?" component={Cart}/>
         <Route exact path="/" component={Products}/>
+        <Route path="/signin" component={SignIn}/>
         <Route path="/product/:id" component={ProductPage}/>
       </Switch>
     </main>
