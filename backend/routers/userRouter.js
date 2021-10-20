@@ -9,16 +9,20 @@ import { generateToken } from '../server/utils.js';
 const userRouter = express.Router();
 
 
-userRouter.get('/seed', expressAsyncHandler( async(req, res) => {
+userRouter.get('/seed', expressAsyncHandler(async (req, res) => {
   // await User.remove({});
   const createdUser = await User.insertMany(data.users);
-  res.send({ createdUser });
+  res.send({
+    createdUser
+  });
 }));
 
-userRouter.post('/signin', expressAsyncHandler(async(req,res)=> {
-  const user = await User.findOne({email: req.body.email});
-  if(user) {
-    if(bcrypt.compareSync(req.body.password, user.password)){
+userRouter.post('/signin', expressAsyncHandler(async (req, res) => {
+  const user = await User.findOne({
+    email: req.body.email
+  });
+  if (user) {
+    if (bcrypt.compareSync(req.body.password, user.password)) {
       res.send({
         _id: user._id,
         name: user.name,
@@ -29,8 +33,9 @@ userRouter.post('/signin', expressAsyncHandler(async(req,res)=> {
       return;
     }
   }
-  res.status(401).send({message: 'Invalid login'})  
- })
-);
+  res.status(401).send({
+    message: 'Invalid login'
+  });
+}));
 
 export default userRouter;

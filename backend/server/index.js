@@ -9,6 +9,10 @@ dotenv.config();
 const app = express()
 const port = 8000;
 
+//middleware 
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
+
 //connect to db
 mongoose.connect('mongodb://localhost/superboop', {
   useNewUrlParser: true,
