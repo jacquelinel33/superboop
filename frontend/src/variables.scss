@@ -6,7 +6,6 @@
 
 $primaryFontFamily: 'Lato', helvetica;
 
-
-
-
-
+@mixin center{
+  padding: 10em 10em 0 10em;
+}

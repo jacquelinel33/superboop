@@ -42,7 +42,7 @@ export default function SignIn() {
         <div>
           <label/>
           <div>
-            Create Account <Link to="/register">Create account</Link>
+            New? <Link to="/register">Create account</Link>
           </div>
         </div>
       </form>

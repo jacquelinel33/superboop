@@ -1,6 +1,9 @@
+@import '../../variables.scss';
+
 .products-container {
+  @include center;
   display: grid;
-  margin: 10em 10em 0 10em;
+  // margin: 10em 10em 0 10em;
   grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
   justify-content: center;
   justify-items: center;
