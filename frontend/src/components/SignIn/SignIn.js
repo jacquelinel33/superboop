@@ -16,7 +16,7 @@ export default function SignIn() {
           <h1>Sign In</h1>
         </div>
         <div>
-          <label htmlFor="email">Email Address</label>
+          <label htmlFor="email"></label>
           <input
             type="email"
             id="email"
@@ -26,7 +26,7 @@ export default function SignIn() {
           </input>
         </div>
         <div>
-          <label htmlFor="Password">Password</label>
+          <label htmlFor="Password"></label>
           <input
             type="password"
             id="password"
