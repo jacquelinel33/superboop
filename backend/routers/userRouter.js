@@ -10,7 +10,7 @@ const userRouter = express.Router();
 
 
 userRouter.get('/seed', expressAsyncHandler(async (req, res) => {
-  // await User.remove({});
+  await User.remove({});
   const createdUser = await User.insertMany(data.users);
   res.send({
     createdUser
@@ -21,8 +21,11 @@ userRouter.post('/signin', expressAsyncHandler(async (req, res) => {
   const user = await User.findOne({
     email: req.body.email
   });
+  console.log("user", user)
   if (user) {
+    console.log("inside user if")
     if (bcrypt.compareSync(req.body.password, user.password)) {
+      console.log("generate token", generateToken(user))
       res.send({
         _id: user._id,
         name: user.name,

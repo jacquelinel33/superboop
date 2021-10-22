@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 // import { cartReducer } from "./reducers/cartReducers";
 import { productDetailsReducer, productListReducer } from "./reducers/productReducers";
 import { cartSlice } from "./reducers/cartSlice";
+import { signinSlice } from "./reducers/userSlice";
 
 //store holds global state
 
@@ -19,7 +20,8 @@ const reducer = combineReducers({
   productDetails: productDetailsReducer,
   // cart: cartReducer,
   //cart reducer uses createSlice() to create reducers
-  cart: cartSlice.reducer
+  cart: cartSlice.reducer,
+  signin: signinSlice.reducer,
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
