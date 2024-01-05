@@ -1,10 +1,10 @@
 .products-container {
   display: grid;
   margin: 10em 10em 0 10em;
-  grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
   justify-content: center;
   justify-items: center;
-  gap: 3em 3em;
+  gap: 2em 2em;
   align-content: space-around;
 
 
@@ -13,8 +13,8 @@
   }
 
   .small-image {
-    width: 25em;
-    height: 25em;
+    width: 20em;
+    height: 20em;
     object-fit: cover;
     overflow: hidden;
     // width: 25em;
