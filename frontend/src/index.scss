@@ -4,6 +4,10 @@
 @import './components/Footer/footer.scss';
 @import './components/cart/cart.scss';
 
+* {
+  margin: 0;
+}
+
 html {
   font-family: $primaryFontFamily;
 }

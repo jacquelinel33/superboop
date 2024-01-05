@@ -1,3 +1,5 @@
+@import '../../variables';
+
 header{
   height: 7em;
   overflow: hidden;
@@ -5,20 +7,19 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.928);
-  border-bottom: rgba(128, 128, 128, 0.229) thin;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
-   -webkit-backdrop-filter: blur(4px);
-   -o-backdrop-filter: blur(4px);
-   -moz-backdrop-filter: blur(4px);
+  color:$primary-color;
+  background-color: $secondary-color;
+  
+}
 
-   backdrop-filter: blur(4px);
+a:visited {
+  color: $primary-color;
 }
 
 .nav {
+  height: 100%;
   margin: 0 12em;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,8 +32,11 @@ header{
     flex-direction: row;
     align-items: center;
     .logo {
-      width: 2em;
-      height: 2em;
+      width: .5em;
+      height: .5em;
+      position: absolute;
+      top: 50px;
+      left: 500px;
     }
   }
   .logo {
@@ -40,8 +44,7 @@ header{
   }
 
   ._right {
-    display: inline-flex;
-    font: 3em;
+    font-size: 1.2em;
     
     a{
       margin: .5em;
