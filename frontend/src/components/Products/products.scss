@@ -7,6 +7,9 @@
   gap: 2em 2em;
   align-content: space-around;
 
+  img:hover {
+    opacity: 0.5;
+  }
 
   .card {
     text-align: center;
@@ -42,9 +45,30 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 10em 10em 0 10em;
+  gap: 1em;
 
   .product-details {
-    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+  }
+
+  .product-desription {
+    font-size: 1em;
+  }
+
+  .add-to-cart {
+    width: 50%;
+    background: white;
+    border: thin black solid;
+    padding: .5em;
+    text-transform: uppercase;
+  }
+
+  select {
+    border-radius: none;
+    border: thin grey solid;
+    display: inline;
   }
 
 }

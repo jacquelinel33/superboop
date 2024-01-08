@@ -8,8 +8,20 @@
   margin: 0;
 }
 
+a {
+  color: $primary-color;
+}
+
+a:visited {
+  color: $primary-color;
+}
+
 html {
   font-family: $primaryFontFamily;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 .site-container {
