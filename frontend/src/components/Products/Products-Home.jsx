@@ -22,6 +22,7 @@ const Products = () => {
   return (
     <div className="products-container">
       {products.map((product) => {
+         console.log(product._id);
         return <ProductList key={product._id} product={product}/>
       })}
     </div>

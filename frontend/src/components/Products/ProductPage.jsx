@@ -35,7 +35,7 @@ const ProductPage = (props) => {
         <div>${product.price}</div>
         <div>{product.description}</div>
         {
-          product.stock > 0 && (
+          product.stock > 0 ? (
             <>
             <div className="quantity-input">
               <div>Quantity:</div>
@@ -57,6 +57,8 @@ const ProductPage = (props) => {
               <button onClick={addToCartHandler} className="add-to-cart">Add to Cart</button>
             </div>
             </>
+          ) : (
+            <div className="sold-out">Sold Out</div>
           )
         }
       </section>
