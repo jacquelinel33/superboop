@@ -31,9 +31,9 @@ const ProductPage = (props) => {
 
       </div>
       <section className="product-details">
-        <div>{product.name}</div>
+        <h2>{product.name}</h2>
         <div>${product.price}</div>
-        <div>{product.description}</div>
+        <div className="product-desription">{product.description}</div>
         {
           product.stock > 0 ? (
             <>
