@@ -30,23 +30,30 @@ const Cart = (props) => {
   };
 
   return (
-    <div className="cart">
+    <table className="cart">
     <div>
       <h1>Shopping Cart</h1>
+      <tr>
+              <th></th>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Delete</th>
+            </tr>
       { cartItems.length === 0 ? (<Message> Cart is empty </Message>)
       :
       (
-        <div>
+        <tbody>
           {cartItems.map((item) => (
-            <div key={item.product}>
-              <div>
+            <tr className="cart-item"key={item.product}>
+              <td>
                   <img src={item.image} alt={item.name} className="small-img">
                   </img>
-              </div>
-              <div>
+              </td>
+              <td>
                 <Link to={`/product/${item.product}`}>{item.name}</Link>
-              </div>
-              <div>
+              </td>
+              <td>
                 <select
                 value={item.qty}
                 onChange={e => 
@@ -61,16 +68,16 @@ const Cart = (props) => {
                       </option>
                     ))}
                 </select>
-              </div>
-              <div>
+              </td>
+              <td>
                 ${item.price}
-              </div>
-              <div>
+              </td>
+              <td>
                 <button type="button" onClick={ () => deleteFromCartHandler(item.product)}>X</button>
-              </div>
-            </div>
+              </td>
+            </tr>
           ))}
-        </div>
+        </tbody>
       )}
     </div>
     <div>
@@ -83,7 +90,7 @@ const Cart = (props) => {
         </button>
       </div>
     </div>
-    </div>
+    </table>
   );
 };
 

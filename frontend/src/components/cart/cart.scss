@@ -1,4 +1,32 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+}
+
 .cart {
-  display: grid;
-  margin: 10em 10em 0 10em;
+
+  
+
+  font-size: 1.4em;
+
+  select{
+    width: 40px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  td {
+    padding: 2em 5em;
+  }
+
+  // .cart-item{
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+
+  //   div {
+  //     padding: 2em 2em;
+  //   }
+  // }
 }
