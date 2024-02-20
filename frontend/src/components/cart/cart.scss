@@ -6,9 +6,7 @@ table {
 
 .cart {
 
-  
-
-  font-size: 1.4em;
+  font-size: 1em;
 
   select{
     width: 40px;
@@ -20,13 +18,10 @@ table {
     padding: 2em 5em;
   }
 
-  // .cart-item{
-  //   display: flex;
-  //   flex-direction: row;
-  //   align-items: center;
-
-  //   div {
-  //     padding: 2em 2em;
-  //   }
-  // }
 }
+
+@media (min-width: 2000px) {
+    .cart {
+      font-size: 1.4em;
+    }
+ }

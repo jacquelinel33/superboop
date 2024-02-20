@@ -5,10 +5,10 @@ const data = {
         name: 'Cherry Tug',
         category: 'Toy',
         image: '/images/cherry-tug.png',
-        price: 20,
+        price: 50,
         brand: 'Bite Me',
         description: 'Play tug with these cute cherries! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
-        stock: 20,
+        stock: 30,
       },
       {
         _id: '1',
