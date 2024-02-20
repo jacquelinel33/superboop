@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.6.1",
+    "@reduxjs/toolkit": "^1.9.7",
     "anymatch": "^3.1.2",
     "bcryptjs": "^2.4.3",
     "binary-extensions": "^2.2.0",
