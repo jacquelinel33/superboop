@@ -37,7 +37,9 @@
 .medium-image {
   width: 30em;
   height: 30em;
-  object-fit: cover;
+  // object-fit: cover;
+  // display: block;
+  // margin-left: auto;
 }
 
 
@@ -45,7 +47,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 10em 10em 0 10em;
-  gap: 1em;
+  gap: 2em;
+
+  h2 {
+    margin-bottom: .5em;
+  }
+
+  .quantity-input {
+    margin: 2em 0;
+  }
 
   .product-details {
     display: flex;
@@ -75,4 +85,19 @@
 .footer-title{
   border-bottom: 1px solid black;
   display: inline;
+}
+
+@media (min-width: 2000px) {
+
+  .medium-image {
+    width:auto;
+    height: auto;
+  }
+
+  .product-container {
+    margin: 10em 30em 0 30em;
+  }
+  .products-container {
+    margin: 10em 30em 0 30em;
+  }
 }

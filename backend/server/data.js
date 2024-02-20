@@ -7,7 +7,7 @@ const data = {
         image: '/images/cherry-tug.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Play tug with these cute cherries!',
+        description: 'Play tug with these cute cherries! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
         stock: 20,
       },
       {
@@ -17,7 +17,7 @@ const data = {
         image: '/images/chocolate.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Cutest chocolate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
         stock: 20,
       },
       {
@@ -27,7 +27,7 @@ const data = {
         image: '/images/gimbap.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Yummy Gimbap',
+        description: 'Yummy Gimbap. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
         stock: 20,
       },
       {
@@ -37,7 +37,7 @@ const data = {
         image: '/images/lemonade.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Lemonade',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
       },
       {
         _id: '4',
@@ -46,7 +46,8 @@ const data = {
         image: '/images/loaf.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
+        stock: 20,
       },
       {
         _id: '5',
@@ -55,7 +56,8 @@ const data = {
         image: '/images/meat.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
+        stock: 20,
       },
       {
         _id: '6',
@@ -64,7 +66,8 @@ const data = {
         image: '/images/playbook.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
+        stock: 20,
       },
       {
         _id: '7',
@@ -73,7 +76,8 @@ const data = {
         image: '/images/pretzel.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
+        stock: 20,
       },
       {
         _id: '8',
@@ -82,7 +86,8 @@ const data = {
         image: '/images/rollcake.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
+        stock: 20,
       },
       {
         _id: '9',
@@ -91,7 +96,7 @@ const data = {
         image: '/images/toast.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
       },
       {
         _id: '10',
@@ -100,7 +105,8 @@ const data = {
         image: '/images/yooboo.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
+        stock: 20,
       },
       {
         _id: '11',
@@ -109,7 +115,8 @@ const data = {
         image: '/images/clam.png',
         price: 20,
         brand: 'Bite Me',
-        description: 'Cutest chocolate',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel tortor in metus facilisis suscipit ut vel justo. Cras id facilisis massa, vitae blandit augue. Pellentesque enim purus, lobortis in vestibulum et, dictum id orci. Morbi posuere ultricies fermentum. Quisque rhoncus dui erat, vel condimentum felis bibendum at. Cras ac efficitur metus, nec viverra est. Aenean laoreet aliquet molestie. Suspendisse laoreet facilisis diam, ac pellentesque velit. Etiam tempor lorem vel mauris rhoncus, a rutrum lectus bibendum.',
+        stock: 20,
       }
     ]
   }

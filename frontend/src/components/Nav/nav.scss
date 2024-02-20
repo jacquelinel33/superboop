@@ -34,9 +34,10 @@ a:visited {
     .logo {
       width: .5em;
       height: .5em;
-      position: absolute;
-      top: 50px;
-      left: 500px;
+      // position: absolute;
+      // top: 50px;
+      // left: 500px;
+      padding: 10px 0 0 10px;
     }
   }
   .logo {
@@ -55,6 +56,12 @@ a:visited {
     }
   }
 
+}
+
+@media (min-width: 2000px) {
+ .nav {
+  margin: 0 30em;
+ }
 }
 
 
