@@ -6,6 +6,8 @@ import Message from "../Messages/Message";
 
 const Cart = (props) => {
 
+  //react router props
+  console.log(props, "cart-props")
   const productId = props.match.params.id;
   const qty = props.location.search
     ? Number(props.location.search.split("=")[1])
@@ -30,7 +32,7 @@ const Cart = (props) => {
   };
 
   return (
-    <table className="cart">
+  <table className="cart">
     <div>
       <h1>Shopping Cart</h1>
       <tr>

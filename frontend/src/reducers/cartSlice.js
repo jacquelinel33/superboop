@@ -1,3 +1,5 @@
+//slice - state organized into seperate slices. 
+//reducers define how the state changes in response to actions.
 import { createSlice } from '@reduxjs/toolkit';
 
 //createSlice automatically generates action creators and actions types that correspond to the reducers and state
