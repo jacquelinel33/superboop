@@ -1,27 +1,26 @@
-table {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10em;
-}
+.cart-container {
+  // padding-top: 10em;
+  padding: 10em 10em 0 10em;
+  margin: 0 auto; 
 
-.cart {
+  .cart {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
 
-  font-size: 1em;
+    select {
+      width: 40px;
+      height: 32px;
+      font-size: 18px;
+    }
 
-  select{
-    width: 40px;
-    height: 32px;
-    font-size: 18px;
-  }
+    td {
+      padding: 2em 5em;
+    }
 
-  td {
-    padding: 2em 5em;
-  }
-
-}
-
-@media (min-width: 2000px) {
-    .cart {
+    // Media query nested within .cart
+    @media (min-width: 2000px) {
       font-size: 1.4em;
     }
- }
+  }
+}
